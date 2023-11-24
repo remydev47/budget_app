@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: EdgeInsets.only(left: 30, right: 30, top: 30),
                     child: Container(
                       height: 50,
                       width: 50,
@@ -38,6 +38,21 @@ class _HomePageState extends State<HomePage> {
                         ),
                         color: Colors.white,
                         shape: BoxShape.circle,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 110),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'PayDay In a Week',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   )
